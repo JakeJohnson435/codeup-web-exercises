@@ -1,20 +1,18 @@
-
-h2 {
-    color: #FFF; /* single line comment */
-    text-decoration: underline;
-}
-
-.main {
-    text-align: center;
-    color: #FFF
-}
-
-
 body {
     background-image: url(../IMG/background1.png);
     background-color: #F00;
     font-family: 'Mina', sans-serif;
     color: #696969
+}
+
+header {
+    text-align: center;
+    color: #FFF
+}
+
+h2 {
+    color: #FFF; /* single line comment */
+    text-decoration: underline;
 }
 
 ul {
@@ -33,7 +31,6 @@ th {
     text-align: center;
     text-decoration: underline;
 }
-
 
 a:link {
     color:blue;
