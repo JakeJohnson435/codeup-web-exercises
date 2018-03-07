@@ -24,12 +24,16 @@ ul {
 td {
     padding: 1em;
     font-size: small;
+    text-align: center;
 }
 
-tr {
+th {
     padding: .5em;
     font-size: large;
+    text-align: center;
+    text-decoration: underline;
 }
+
 
 a:link {
     color:blue;
