@@ -1,10 +1,48 @@
-/*
-multi
-line
-comment
-*/
 
-.fancy-header {
-    color: purple; /* single line comment */
+h2 {
+    color: #FFF; /* single line comment */
     text-decoration: underline;
+}
+
+.main {
+    text-align: center;
+    color: #FFF
+}
+
+
+body {
+    background-image: url(../IMG/background1.jpeg);
+    background-color: #F00;
+    font-family: 'Mina', sans-serif;
+    color: yellow
+}
+
+ul {
+    list-style: square;
+}
+
+td {
+    padding: 1em;
+    font-size: small;
+}
+
+tr {
+    padding: .5em;
+    font-size: large;
+}
+
+a:link {
+    color:blue;
+}
+
+a:visited {
+    color:red;
+}
+
+a:hover {
+    color:white;
+}
+
+a:active {
+    color:grey;
 }
