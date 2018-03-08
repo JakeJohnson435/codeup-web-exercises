@@ -3,7 +3,7 @@ h1 {
     color: purple;
 }
 
-div {
+.box {
     border: 1px solid black;
     width: 150px;
     height: 50px;
@@ -13,31 +13,31 @@ div {
     margin-bottom: 10px;
 }
 
-.red {
+#red {
     background-color: red;
 }
 
-.orange{
+#orange{
     background-color: orange;
     margin-left: 30px
 }
 
-.yellow {
+#yellow {
     background-color: yellow;
     margin-left: 60px
 }
 
-.green {
+#green {
     background-color: green;
     margin-left: 90px
 }
 
-.blue {
+#blue {
     background-color: blue;
     margin-left: 120px
 }
 
-.violet{
+#violet{
     background-color: violet;
     margin-left: 150px
 }
