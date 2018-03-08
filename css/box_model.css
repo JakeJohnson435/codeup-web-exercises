@@ -10,28 +10,32 @@ div {
     padding: 10px;
     font-weight: bold;
     color: white;
-    margin-bottom: 10px;
 }
 
 .red {
     background-color: red;
 }
+
 .orange{
     background-color: orange;
     margin-left: 30px
 }
+
 .yellow {
     background-color: yellow;
     margin-left: 60px
 }
+
 .green {
     background-color: green;
     margin-left: 90px
 }
+
 .blue {
     background-color: blue;
     margin-left: 120px
 }
+
 .violet{
     background-color: violet;
     margin-left: 150px
