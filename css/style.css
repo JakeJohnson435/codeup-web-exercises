@@ -86,3 +86,7 @@ table {
 footer {
     text-align: center;
 }
+
+img {
+    border: 1px grey;
+}
