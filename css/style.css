@@ -33,11 +33,11 @@ th {
 }
 
 a:link {
-    color:grey;
+    color:black;
 }
 
 a:visited {
-    color:red;
+    color:grey;
 }
 
 a:hover {
@@ -89,4 +89,14 @@ footer {
 
 img {
     border: 1px grey;
+}
+
+.navigation {
+    border: 1px solid grey;
+    background-color: black;
+    width: 10%;
+    text-align: center;
+    position: fixed;
+    top: 10px;
+    right: 10px;
 }
