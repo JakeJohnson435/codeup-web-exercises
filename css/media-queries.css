@@ -70,22 +70,26 @@
 
     .header-img {
         text-align: center;
+        clear: both;
     }
 
     h1 {
         text-align: left;
         position: relative;
         display: inline;
-        width: 80%;
+        width: 70%;
     }
 
     .nav-links {
         text-align: right;
     }
 
+    nav {
+        width: 30%;
+        float: right;
+    }
     nav li {
         display: inline;
-        background-color: #FFF;
         padding-left: 20px;
     }
 
