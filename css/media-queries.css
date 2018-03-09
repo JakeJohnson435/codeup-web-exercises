@@ -33,8 +33,13 @@
 
     .main {
         margin: 0 auto;
+        width: 339px;
     }
 
+    .sub-section{
+        margin: 0 auto;
+        width: 339px;
+    }
     .header-img {
         text-align: center;
     }
