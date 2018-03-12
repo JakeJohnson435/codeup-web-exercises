@@ -28,6 +28,11 @@
     background-color: #CCCCCC;
 }
 
+.one-fifth {
+    width: 20%;
+    background-color: beige;
+}
+
 .row {
     width: 100%;
 }
