@@ -3,11 +3,6 @@
 
     .alert-info {
         text-align: center;
-        width: 339px;
-        height: 40px;
-        margin: 0 auto;
-        background-color: #D6FEFE;
-        border: solid black 1px;
     }
 
     h1 {
@@ -16,37 +11,21 @@
 
     nav {
         text-align: center;
-        margin: 0 auto;
     }
 
-    li {
-        background-color: #CCC;
-        width: 339px;
-        height: 40px;
-        margin: 10px auto;
-    }
 
     ul {
         list-style-type: none;
         padding-left: 0;
     }
 
-    .main {
-        margin: 0 auto;
-        width: 339px;
-    }
-
-    .sub-section{
-        margin: 0 auto;
-        width: 339px;
-    }
     .header-img {
         text-align: center;
     }
 
     img {
-        width: 339px;
-        height: 224px;
+        max-width: 100;
+        height: auto;
     }
 
     .twitter {
@@ -82,7 +61,6 @@
         text-align: left;
         position: relative;
         display: inline;
-        width: 70%;
     }
 
     .nav-links {
@@ -90,9 +68,9 @@
     }
 
     nav {
-        width: 30%;
         float: right;
     }
+
     nav li {
         display: inline;
         padding-left: 20px;
@@ -100,17 +78,14 @@
 
     #main {
         float: left;
-        width: 75%;
     }
 
     .sub-section {
         float: right;
-        width: 25%;
     }
 
     img {
-        width: 600px;
-        height: 400px;
+        max-width: 100%;
     }
 
     footer p{
@@ -140,5 +115,23 @@
     .instagram {
         height: 20px;
         width: 20px;
+    }
+
+    .two-thirds {
+        width: 66.67%;
+    }
+
+    .one-third {
+        width: 33.33%;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
     }
 }
