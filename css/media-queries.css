@@ -109,35 +109,5 @@
         width: 20px;
     }
 
-    .two-thirds {
-        width: 66.67%;
-    }
-
-    .one-third {
-        width: 33.33%;
-    }
-
-    .row {
-        width: 100%;
-    }
-
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
-    .offset-two-thirds {
-        margin-left: 66.67%;
-    }
-
-    .offset-one-third {
-        margin-left: 33.33%;
-    }
-
-    .column {
-        float: left;
-    }
-
 }
 
