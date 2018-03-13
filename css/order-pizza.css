@@ -21,6 +21,10 @@
     float: right;
 }
 
+.btn-group {
+    float: right;
+}
+
 .card-body {
     padding: 0;
 }
@@ -32,7 +36,7 @@
 
 .card {
     width: 100%;
-    margin: 0 auto;"
+    margin-bottom: 1em;
 }
 
 .card p {
@@ -52,10 +56,6 @@
 
 .card-title {
     margin-bottom: 0;
-}
-
-.btn-group {
-    float: right;
 }
 
 li {
