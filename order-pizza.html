@@ -41,16 +41,16 @@
     <h2>Build your own pizza!</h2>
     <ul class="nav nav-tabs">
         <li class="nav-item">
-            <a class="nav-link active" href="#"><span class="badge badge-secondary">1</span> Size and crust</a>
+            <a class="nav-link active" href="#size"><span class="badge badge-secondary">1</span> Size and crust</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#"><span class="badge badge-secondary">2</span> Cheese and Sauce</a>
+            <a class="nav-link" href="#cheese"><span class="badge badge-secondary">2</span> Cheese and Sauce</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link " href="#"><span class="badge badge-secondary">3</span> Toppings</a>
+            <a class="nav-link " href="#toppings"><span class="badge badge-secondary">3</span> Toppings</a>
         </li>
     </ul>
-    <div class="card">
+    <div class="card" id="size">
         <div class="card-body">
             <div class="card-header"><h5 class="card-title">Choose size and crust</h5></div>
             <div class="card inner-card">
@@ -90,7 +90,7 @@
             <a href="#" class="btn btn-primary">Next Step ></a>
         </div>
     </div>
-    <div class="card">
+    <div class="card" id="cheese">
         <div class="card-body">
             <div class="card-header"><h5 class="card-title">Choose cheese and sauce</h5></div>
             <div class="card inner-card">
@@ -126,12 +126,12 @@
                     </div>
                 </div>
             <div class="btn-group" role="group" aria-label="Basic example">
-                <a href="#" class="btn btn-primary">< Previous Step</a>
+                <a href="#" class="btn btn-primary previous">< Previous Step</a>
                 <a href="#" class="btn btn-primary">Next Step ></a>
             </div>
         </div>
     </div>
-    <div class="card">
+    <div class="card" id="toppings">
         <div class="card-body">
             <div class="card-header"><h5 class="card-title">Choose Toppings</h5></div>
             <div class="card inner-card">
@@ -207,7 +207,7 @@
                     </ul>
                 </div>
             </div>
-            <a href="#" class="btn btn-primary">Next Step ></a>
+            <a href="#" class="btn btn-primary">Checkout</a>
         </div>
     </div>
 </div>

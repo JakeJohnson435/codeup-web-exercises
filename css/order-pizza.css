@@ -46,6 +46,8 @@
 
 .inner-card {
     padding: 1em;
+    width: 96%;
+    margin: 1em;
 }
 
 .card-title {
@@ -54,4 +56,36 @@
 
 .btn-group {
     float: right;
+}
+
+li {
+    padding: 1em;
+}
+
+.btn {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    float: right;
+}
+
+.previous {
+    margin-right: 0;
+}
+
+.card-body>.card-header {
+    background-color: #2E7CF6;
+}
+
+.inner-card>.card-header {
+    background-color: #F7F7F7;
+}
+
+.card-footer {
+    background-color: #F7F7F7;
+    padding: 0;
+}
+
+.input-group-text {
+    background-color: #FFF;
 }
