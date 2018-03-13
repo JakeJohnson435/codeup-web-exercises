@@ -29,8 +29,12 @@
     padding: 0;
 }
 
-.card-body>.card-header {
+.card-body .card-header {
     margin: 0;
+    width: 100%;
+}
+
+.inner-card .card-header {
     width: 100%;
 }
 
@@ -46,12 +50,17 @@
 
 .list-group-item {
     padding: .5em;
+    background-color: #DCEDF6;
 }
 
 .inner-card {
-    padding: 1em;
+    padding: 0;
     width: 96%;
     margin: 1em;
+}
+
+#cheese .inner-card {
+    background-color: #DCEDF6;
 }
 
 .card-title {
@@ -98,3 +107,5 @@ li {
 h5 {
     color: #FFF;
 }
+
+/*#DCEDF6*/
