@@ -41,7 +41,7 @@
 }
 
 .list-group-item {
-    padding: 0;
+    padding: .5em;
 }
 
 .inner-card {
@@ -88,4 +88,6 @@ li {
 
 .input-group-text {
     background-color: #FFF;
+    border: none;
 }
+
