@@ -9,13 +9,18 @@
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
 
-function sayHello(name){
-    var name = "Jake"
-    console.log(sayHello + name)
 
-}
+(function(){
+    function sayHello(name){
+        return("Hello, " + name);
+    }
 
+    console.log(name);
 
+    var helloMessage = sayHello("codeup");
+    console.log(helloMessage);
+
+})();
 
 
 /**
@@ -26,12 +31,15 @@ function sayHello(name){
  * console.log 'helloMessage' to check your work
  */
 
+
+
 /**
  * TODO:
  * Store your name as a string in a variable named 'myName', and pass that
  * variable to the 'sayHello' function. You should see the same output in the
  * console.
  */
+
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
@@ -54,6 +62,13 @@ var random = Math.floor((Math.random() * 3) + 1);
  * different result everytime you refresh the page if you are using the random
  * number)
  */
+
+// function isTwo(number){
+//     return number === 2;
+// }
+//
+// isTwo(random);
+// console.log(isTwo);
 
 /**
  * TODO:
