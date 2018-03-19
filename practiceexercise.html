@@ -2,10 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-$END$
+
+<script>
+
+    // var littleMermaid = prompt("How many days did you rent The Little Mermaid for?");
+    //
+    // var brotherBear = prompt("What about Brother Bear?");
+    //
+    // var hercules = prompt("And what about Hercules?");
+    //
+    // var total = (parseInt(littleMermaid) + parseInt(brotherBear) + parseInt(hercules)) * (3);
+    // console.log(total);
+    //
+    // alert("you owe $" + total + " in rental fees");
+
+    // var googleRate = prompt("What does Google pay you hourly?");
+    //
+    // var amazonRate = prompt("What about Amazon?");
+    //
+    // var facebookRate = prompt("And FaceBook?");
+    //
+    // var googleHours = prompt("How many hours did you work for Google this week?");
+    //
+    // var amazonHours = prompt("What about for Amazon?");
+    //
+    // var facebookHours = prompt("And finally, FaceBook?");
+    //
+    // var income = ((parseInt(googleHours) * parseInt(googleRate)) + (parseInt(amazonHours) * parseInt(amazonRate)) + (parseInt(facebookHours) * (parseInt(facebookRate))));
+    //
+    // alert("You made " + income + " this week!");
+
+    // var classFull = confirm("Is this class full?");
+    // console.log(classFull);
+    //
+    // var scheduleConflict = confirm("Does this create a scheduling conflict for you?");
+    // console.log(scheduleConflict);
+    //
+    // var classEligible = !classFull && !scheduleConflict;
+    // console.log(classEligible);
+
+    var itemsBought = prompt("How many items did you buy?");
+    console.log(itemsBought);
+
+    var validCoupon = confirm("Do you have a valid coupon?");
+    console.log(validCoupon);
+
+    var premiumMember = confirm("Are you a premium member?");
+    console.log(premiumMember);
+
+    if(premiumMember == true && validCoupon == true){
+        alert("Congratulations you qualify for a special")
+    }
+
+    else{
+        if(itemsBought >=2 && validCoupon == true){
+            alert("Congratulations you qualify for a special")
+        }
+    }
+
+</script>
+
+
 </body>
 </html>
