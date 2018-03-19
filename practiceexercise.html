@@ -9,16 +9,20 @@
 
 <script>
 
-    // var littleMermaid = prompt("How many days did you rent The Little Mermaid for?");
-    //
-    // var brotherBear = prompt("What about Brother Bear?");
-    //
-    // var hercules = prompt("And what about Hercules?");
-    //
-    // var total = (parseInt(littleMermaid) + parseInt(brotherBear) + parseInt(hercules)) * (3);
-    // console.log(total);
-    //
-    // alert("you owe $" + total + " in rental fees");
+    "use strict";
+
+    var littleMermaid = prompt("How many days did you rent The Little Mermaid for?");
+
+    var brotherBear = prompt("What about Brother Bear?");
+
+    var hercules = prompt("And what about Hercules?");
+
+    var pricePerDay = 3;
+
+    var total = (parseInt(littleMermaid) + parseInt(brotherBear) + parseInt(hercules)) * (pricePerDay);
+    console.log(total);
+
+    alert("you owe $" + total + " in rental fees");
 
     // var googleRate = prompt("What does Google pay you hourly?");
     //
@@ -45,24 +49,24 @@
     // var classEligible = !classFull && !scheduleConflict;
     // console.log(classEligible);
 
-    var itemsBought = prompt("How many items did you buy?");
-    console.log(itemsBought);
-
-    var validCoupon = confirm("Do you have a valid coupon?");
-    console.log(validCoupon);
-
-    var premiumMember = confirm("Are you a premium member?");
-    console.log(premiumMember);
-
-    if(premiumMember == true && validCoupon == true){
-        alert("Congratulations you qualify for a special")
-    }
-
-    else{
-        if(itemsBought >=2 && validCoupon == true){
-            alert("Congratulations you qualify for a special")
-        }
-    }
+    // var itemsBought = prompt("How many items did you buy?");
+    // console.log(itemsBought);
+    //
+    // var validCoupon = confirm("Do you have a valid coupon?");
+    // console.log(validCoupon);
+    //
+    // var premiumMember = confirm("Are you a premium member?");
+    // console.log(premiumMember);
+    //
+    // if(premiumMember == true && validCoupon == true){
+    //     alert("Congratulations you qualify for a special")
+    // }
+    //
+    // else{
+    //     if(itemsBought >=2 && validCoupon == true){
+    //         alert("Congratulations you qualify for a special")
+    //     }
+    // }
 
 </script>
 
