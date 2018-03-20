@@ -9,18 +9,15 @@
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
 
+// var name = prompt("What is your name?");
+//
+// function sayHello(name){
+//     return("Hello, " + name);
+// }
+//
+// var helloMessage = sayHello(name);
+// console.log(helloMessage);
 
-// (function(){
-//     function sayHello(name){
-//         return("Hello, " + name);
-//     }
-//
-//     console.log(name);
-//
-//     var helloMessage = sayHello("codeup");
-//     console.log(helloMessage);
-//
-// })();
 
 
 /**
@@ -117,12 +114,98 @@ var random = Math.floor((Math.random() * 3) + 1);
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
 
-var originalPrice = prompt("What was the price of your bill?");
-var discountPrice = .25;
+// var originalPrice = prompt("What was the price of your bill?");
+// var discountPrice = .25;
+//
+// function applyDiscount(originalPrice, discountPrice){
+//     var discountAmount = (originalPrice * discountPrice);
+//     return originalPrice - discountAmount;
+// }
+//
+// alert("Your price after discount is $" + (applyDiscount(originalPrice, discountPrice)));
 
-function applyDiscount(originalPrice, discountPrice){
-    var discountAmount = (originalPrice * discountPrice);
-    return originalPrice - discountAmount;
+
+
+// function isOdd(someNumber){
+//     var answer = someNumber%=2
+//     return answer===1;
+//
+// }
+//
+// console.log(isOdd(8));
+
+//
+// function isEven(someNumber){
+//     var answer = someNumber%=2
+//     return answer===0;
+//
+// }
+//
+// console.log(isEven(7));
+//
+//
+// function isPositive(someNumber){
+//     return someNumber>0;
+//
+// }
+//
+// console.log(isPositive(-6));
+
+// function decrement(someNumber){
+//     return someNumber-1;
+//
+// }
+//
+// console.log(decrement(182));
+
+// function hasSpaces(someString){
+//     var typedString = prompt("Enter some text");
+//     var answer = typedString.indexOf(" ");
+//     return answer !=-1;
+//
+// }
+//
+// console.log(hasSpaces());
+//
+// function isFive(someNumber){
+//     return someNumber===5;
+//
+// }
+//
+// console.log(isFive(.5));
+
+// function isSquare(someNumber){
+//     return someNumber*someNumber;
+//
+// }
+//
+// console.log(isSquare(5));
+//
+// function isCube(someNumber){
+//     return someNumber*someNumber*someNumber;
+//
+// }
+//
+// console.log(isCube(5));
+
+// function isHalf(someNumber){
+//     return someNumber/2;
+//
+// }
+//
+// console.log(isHalf(5));
+//
+// function isDouble(someNumber){
+//     return someNumber*2;
+//
+// }
+//
+// console.log(isDouble(5));
+
+function isRightTriangle(a, b, c){
+
+    return (a*a)+(b*b)==c;
+
 }
 
-alert("Your price after discount is $" + (applyDiscount(originalPrice, discountPrice)));
+console.log(isRightTriangle(5, 5, 60));
