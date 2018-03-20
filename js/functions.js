@@ -201,11 +201,34 @@ var random = Math.floor((Math.random() * 3) + 1);
 // }
 //
 // console.log(isDouble(5));
+//
+// function isRightTriangle(a, b, c){
+//
+//     return (a*a)+(b*b)==c;
+//
+// }
+//
+// console.log(isRightTriangle(5, 5, 60));
 
-function isRightTriangle(a, b, c){
 
-    return (a*a)+(b*b)==c;
 
+
+function isValidLogin(username, password) {
+    // Strictly speaking, we don't need to have separate variables for all of
+    // these but it makes the code easier to read and reason about
+    var isPasswordLongEnough = password.length > 5;
+    var isUsernameShortEnough = username.length < 20;
+    var passwordIncludesUsername = password.indexOf(username) !== -1;
+    var usernameHasWhitespace = username !== username.trim();
+    var passwordHasWhitespace = password !== password.trim();
+
+    return (
+        isPasswordLongEnough &&
+        isUsernameShortEnough &&
+        ! passwordIncludesUsername &&
+        ! usernameHasWhitespace &&
+        ! passwordHasWhitespace
+    );
 }
 
-console.log(isRightTriangle(5, 5, 60));
+console.log(isValidLogin());
