@@ -10,17 +10,17 @@
  */
 
 
-(function(){
-    function sayHello(name){
-        return("Hello, " + name);
-    }
-
-    console.log(name);
-
-    var helloMessage = sayHello("codeup");
-    console.log(helloMessage);
-
-})();
+// (function(){
+//     function sayHello(name){
+//         return("Hello, " + name);
+//     }
+//
+//     console.log(name);
+//
+//     var helloMessage = sayHello("codeup");
+//     console.log(helloMessage);
+//
+// })();
 
 
 /**
@@ -68,7 +68,7 @@ var random = Math.floor((Math.random() * 3) + 1);
 // }
 //
 // isTwo(random);
-// console.log(isTwo);
+// console.log(isTwo(random));
 
 /**
  * TODO:
@@ -82,12 +82,25 @@ var random = Math.floor((Math.random() * 3) + 1);
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
 
+// function calculateTip(tipPercentage, billTotal){
+//     var tipAmount = (tipPercentage * billTotal);
+//     return tipAmount;
+// }
+//
+// console.log(calculateTip(.25, 25.50));
+
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
+
+// var userBill = prompt("What was the total of the bill?");
+// var userPercent = prompt("What percent would you like to tip?");
+//
+// alert(calculateTip(userBill, userPercent));
+
 
 /**
  * TODO:
@@ -103,3 +116,13 @@ var random = Math.floor((Math.random() * 3) + 1);
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
+
+var originalPrice = prompt("What was the price of your bill?");
+var discountPrice = .25;
+
+function applyDiscount(originalPrice, discountPrice){
+    var discountAmount = (originalPrice * discountPrice);
+    return originalPrice - discountAmount;
+}
+
+alert("Your price after discount is $" + (applyDiscount(originalPrice, discountPrice)));
