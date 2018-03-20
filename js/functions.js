@@ -15,7 +15,7 @@
 //     return("Hello, " + name);
 // }
 //
-// var helloMessage = sayHello(name);
+// var helloMessage = sayHello("Jake");
 // console.log(helloMessage);
 
 
@@ -124,8 +124,6 @@ var random = Math.floor((Math.random() * 3) + 1);
 //
 // alert("Your price after discount is $" + (applyDiscount(originalPrice, discountPrice)));
 
-
-
 // function isOdd(someNumber){
 //     var answer = someNumber%=2
 //     return answer===1;
@@ -231,4 +229,4 @@ function isValidLogin(username, password) {
     );
 }
 
-console.log(isValidLogin());
+console.log(isValidLogin("Shake", "PasswordForMe"));
