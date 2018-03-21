@@ -32,16 +32,16 @@ if (isNaN(number)){
     } else {
         alert("Your number is odd!")
     }
-    alert("Your number plus 100 is " + (number + 100));
+        alert("Your number plus 100 is " + (number + 100));
 
     if (number > 0) {
         alert("Your number is a positive number!")
+    } else if (number ===0){
+        alert("Your number is neither positive nor negative")
     } else {
         alert("Your number is a negative number!")
     }
 }
-
-
 
 console.log(number);
 /* ########################################################################## */
