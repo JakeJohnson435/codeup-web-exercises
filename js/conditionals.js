@@ -16,17 +16,29 @@
  * Can you refactor your code to use functions?
  */
 
-// var enterANumber = confirm("Would you like to enter a number?");
-//
-// if (enterANumber == true) {
-//     var aNumber = prompt("Enter your number here");
-// }
-//
-// function isEven(aNumber){
-//
-//     var numberIsEven = aNumber % 2==0;
-// }
+var enterANumber = confirm("Would you like to enter a number?");
 
+if (enterANumber == false){
+    alert("You cancelled the prompt")
+} else {
+    var number = parseFloat(prompt("Enter your number here"))
+}
+
+if (number % 2 ===0){
+    alert("Your number is even!")
+} else {
+    alert("Your number is odd!")
+}
+
+alert("Your number plus 100 is " + (number + 100));
+
+if (number > 0){
+    alert("Your number is a positive number!")
+} else {
+    alert("Your number is a negative number!")
+}
+
+console.log(number);
 /* ########################################################################## */
 
 /**
@@ -129,33 +141,33 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * return value.
  */
 
-var totalAmount = prompt("Enter your total here");
-
-function calculateTotal(luckyNumber, totalAmount) {
-
-    switch (luckyNumber) {
-        case 0:
-            alert("Your total is $" + parseFloat(totalAmount));
-            break;
-        case 1:
-            alert("Your total is $" + parseFloat(totalAmount) * .90);
-            break;
-        case 2:
-            alert("Your total is $" + parseFloat(totalAmount) * .75);
-            break;
-        case 3:
-            alert("Your total is $" + parseFloat(totalAmount) * .65);
-            break;
-        case 4:
-            alert("Your total is $" + parseFloat(totalAmount) * .5);
-            break;
-        case 5:
-            alert("CONGRATULATIONS! You're a lucky winner and get this purchase free!");
-            break;
-    }
-}
-var luckyNumber = Math.floor(Math.random() * 6);
-calculateTotal(luckyNumber, totalAmount);
+// var totalAmount = prompt("Enter your total here");
+//
+// function calculateTotal(luckyNumber, totalAmount) {
+//
+//     switch (luckyNumber) {
+//         case 0:
+//             alert("Your total is $" + parseFloat(totalAmount));
+//             break;
+//         case 1:
+//             alert("Your total is $" + parseFloat(totalAmount) * .90);
+//             break;
+//         case 2:
+//             alert("Your total is $" + parseFloat(totalAmount) * .75);
+//             break;
+//         case 3:
+//             alert("Your total is $" + parseFloat(totalAmount) * .65);
+//             break;
+//         case 4:
+//             alert("Your total is $" + parseFloat(totalAmount) * .5);
+//             break;
+//         case 5:
+//             alert("CONGRATULATIONS! You're a lucky winner and get this purchase free!");
+//             break;
+//     }
+// }
+// var luckyNumber = Math.floor(Math.random() * 6);
+// calculateTotal(luckyNumber, totalAmount);
 
 /**
  * TODO:
