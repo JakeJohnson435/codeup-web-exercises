@@ -18,25 +18,30 @@
 
 var enterANumber = confirm("Would you like to enter a number?");
 
-if (enterANumber == false){
+if (enterANumber === false){
     alert("You cancelled the prompt")
 } else {
     var number = parseFloat(prompt("Enter your number here"))
 }
 
-if (number % 2 ===0){
-    alert("Your number is even!")
+if (isNaN(number)){
+    alert("What you entered is not a number.")
 } else {
-    alert("Your number is odd!")
+    if (number % 2 === 0) {
+        alert("Your number is even!")
+    } else {
+        alert("Your number is odd!")
+    }
+    alert("Your number plus 100 is " + (number + 100));
+
+    if (number > 0) {
+        alert("Your number is a positive number!")
+    } else {
+        alert("Your number is a negative number!")
+    }
 }
 
-alert("Your number plus 100 is " + (number + 100));
 
-if (number > 0){
-    alert("Your number is a positive number!")
-} else {
-    alert("Your number is a negative number!")
-}
 
 console.log(number);
 /* ########################################################################## */
