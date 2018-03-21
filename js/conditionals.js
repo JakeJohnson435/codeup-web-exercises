@@ -16,6 +16,17 @@
  * Can you refactor your code to use functions?
  */
 
+// var enterANumber = confirm("Would you like to enter a number?");
+//
+// if (enterANumber == true) {
+//     var aNumber = prompt("Enter your number here");
+// }
+//
+// function isEven(aNumber){
+//
+//     var numberIsEven = aNumber % 2==0;
+// }
+
 /* ########################################################################## */
 
 /**
@@ -35,6 +46,41 @@
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
+
+
+// var  color=prompt("Enter a color here.");
+//
+// function analyzeColor(color) {
+//
+//     switch (color) {
+//         case "red":
+//             alert("Red is a color of the Angels");
+//             break;
+//         case "orange":
+//             alert("Basketballs are orange");
+//             break;
+//         case "yellow":
+//             alert("Red is a color of the Angels");
+//             break;
+//         case "green":
+//             alert("Grass is green");
+//             break;
+//         case "blue":
+//             alert("The ocean is blue");
+//             break;
+//         case "indigo":
+//             alert("Indigo is in the rainbow");
+//             break;
+//         case "violet":
+//             alert("Violets are violet");
+//             break;
+//         default:
+//             alert("I dont know anything by that color")
+//     }
+// }
+// console.log(analyzeColor(color));
+
+
 
 // Don't change the next two lines!
 // These lines create two variables for you:
@@ -83,6 +129,34 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * return value.
  */
 
+var totalAmount = prompt("Enter your total here");
+
+function calculateTotal(luckyNumber, totalAmount) {
+
+    switch (luckyNumber) {
+        case 0:
+            alert("Your total is $" + parseFloat(totalAmount));
+            break;
+        case 1:
+            alert("Your total is $" + parseFloat(totalAmount) * .90);
+            break;
+        case 2:
+            alert("Your total is $" + parseFloat(totalAmount) * .75);
+            break;
+        case 3:
+            alert("Your total is $" + parseFloat(totalAmount) * .65);
+            break;
+        case 4:
+            alert("Your total is $" + parseFloat(totalAmount) * .5);
+            break;
+        case 5:
+            alert("CONGRATULATIONS! You're a lucky winner and get this purchase free!");
+            break;
+    }
+}
+var luckyNumber = Math.floor(Math.random() * 6);
+calculateTotal(luckyNumber, totalAmount);
+
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 6.
@@ -91,4 +165,4 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+
