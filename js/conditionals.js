@@ -152,22 +152,22 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
 //
 //     switch (luckyNumber) {
 //         case 0:
-//             alert("Your total is $" + parseFloat(totalAmount));
+//             alert("Your lucky number was 0 and your total is $" + parseFloat(totalAmount));
 //             break;
 //         case 1:
-//             alert("Your total is $" + parseFloat(totalAmount) * .90);
+//             alert("Your lucky number was 1 and your total is $" + parseFloat(totalAmount) * .90);
 //             break;
 //         case 2:
-//             alert("Your total is $" + parseFloat(totalAmount) * .75);
+//             alert("Your lucky number was 2 and your total is $" + parseFloat(totalAmount) * .75);
 //             break;
 //         case 3:
-//             alert("Your total is $" + parseFloat(totalAmount) * .65);
+//             alert("Your lucky number was 3 and your total is $" + parseFloat(totalAmount) * .65);
 //             break;
 //         case 4:
-//             alert("Your total is $" + parseFloat(totalAmount) * .5);
+//             alert("Your lucky number was 4 and your total is $" + parseFloat(totalAmount) * .5);
 //             break;
 //         case 5:
-//             alert("CONGRATULATIONS! You're a lucky winner and get this purchase free!");
+//             alert("CONGRATULATIONS you got 5! You're a lucky winner and get this purchase free!");
 //             break;
 //     }
 // }
