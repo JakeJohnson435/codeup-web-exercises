@@ -15,6 +15,14 @@
 //
 // showMultiplicationTable(parseFloat(prompt("Enter a number")));
 
+function showMultiplicationTable(number){
+    for (var i = 1; i <= 10; i++) {
+        console.log(number + " x " + i + " = " + (number*i))
+    }
+}
+
+showMultiplicationTable(8);
+
 function randomNumber(){
     return Math.floor(Math.random() * 180) + 20;
 }
