@@ -8,7 +8,7 @@
 
 do {
     var number = parseFloat(prompt("Enter an odd number between 1 and 49"));
-} while (number % 2 === 0);
+} while (number > 49 || number % 2 == 0);
 
 console.log("Number to skip is "+ number);
 
