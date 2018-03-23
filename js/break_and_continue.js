@@ -15,10 +15,8 @@ console.log("Number to skip is "+ number);
 for (var value = 1; value <=50; value++) {
     if (value == number){
         console.log("Yikes! Skipping number: "+value);
-    } else if (value % 2 !==0) {
-        console.log("Here is an odd number " + value);
-    } else {
         continue;
-    }
+    } else (value % 2 !==0) {
+        console.log("Here is an odd number " + value);
 
 }
