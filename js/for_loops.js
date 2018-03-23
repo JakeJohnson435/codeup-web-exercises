@@ -64,9 +64,9 @@ for (var value = 1; value <=10; value++) {
 //         console.log(999999999)}
 // }
 //
-// for (var value = 100; value >=5; (value-=5)) {
-//     console.log(value);
-// }
+for (var value = 100; value >=5; (value-=5)) {
+    console.log(value);
+}
 
 for (var value=1; value<10; value++) {
     var aString=value.toString();
