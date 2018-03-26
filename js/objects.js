@@ -114,6 +114,27 @@
                 lastName: "Kiedis"
             }
         },
+        {
+            title: "The Push",
+            author: {
+                firstName: "Tommy",
+                lastName: "Caldwell"
+            }
+        },
+        {
+            title: "Scar Tissue",
+            author: {
+                firstName: "Anthony",
+                lastName: "Kiedis"
+            }
+        },
+        {
+            title: "Scar Tissue",
+            author: {
+                firstName: "Anthony",
+                lastName: "Kiedis"
+            }
+        },
     ];
 
 
