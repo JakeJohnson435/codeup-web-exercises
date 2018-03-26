@@ -15,7 +15,7 @@
      * array.
      */
 
-    console.log(names);
+    console.log(names.length);
 
     /**
      * TODO:
