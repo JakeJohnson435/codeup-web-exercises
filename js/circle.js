@@ -17,8 +17,12 @@
 
             // If doRounding is true, round the result to the nearest integer.
             // Otherwise, output the complete value
+            if (doRounding) {
+                console.log("Area of a circle with radius: " + this.radius + ", is: " + Math.round(circle.getArea()));
+            } else {
+                console.log("Area of a circle with radius: " + this.radius + ", is: " + (circle.getArea()));
+            }
 
-            console.log("Area of a circle with radius: " + this.radius + ", is: " + this.getArea());
         }
 
 
@@ -50,8 +54,12 @@
 
             // If doRounding is true, round the result to the nearest integer.
             // Otherwise, output the complete value
+            if (doRounding) {
+                console.log("Area of a circle with radius: " + this.radius + ", is: " + Math.round(circle2.getArea()));
+            } else {
+                console.log("Area of a circle with radius: " + this.radius + ", is: " + (circle2.getArea()));
+            }
 
-            console.log("Area of a circle with radius: " + this.radius + ", is: " + this.getArea());
         }
 
 
