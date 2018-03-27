@@ -92,53 +92,55 @@
      */
 
 
+
     // var books = [
-    //     {title: "The Push", author: {firstName: "Tommy", lastName: "Caldwell"}},
-    //     {title: "Scar Tissue", author: {firstName: "Anthony", lastName: "Kiedis"}},
-    //     {title: "Oathbreaker", author: {firstName: "Brandon", lastName: "Sanderson"}},
-    //     {title: "The Name of the Wind", author: {firstName: "Patrick", lastName: "Rothfuss"}}
+    //     {
+    //         title: "'The Push'",
+    //         author: {
+    //             firstName: "Tommy",
+    //             lastName: "Caldwell"
+    //         }
+    //     },
+    //     {
+    //         title: "'Scar Tissue'",
+    //         author: {
+    //             firstName: "Anthony",
+    //             lastName: "Kiedis"
+    //         }
+    //     },
+    //     {
+    //         title: "'Oathbringer'",
+    //         author: {
+    //             firstName: "Brandon",
+    //             lastName: "Sanderson"
+    //         }
+    //     },
+    //     {
+    //         title: "'The Name of the Wind'",
+    //         author: {
+    //             firstName: "Patrick",
+    //             lastName: "Rothfuss"
+    //         }
+    //     },
+    //     {
+    //         title: "'Typhoon'",
+    //         author: {
+    //             firstName: "Clive",
+    //             lastName: "Cussler"
+    //         }
+    //     }
     // ];
+    //
+    //
+    //
+    //
+    // books.forEach(function(book, index){
+    //     console.log("Book # "+(index+1));
+    //     console.log("Title " + book.title);
+    //     console.log("Author " + book.author.firstName + " " + book.author.lastName);
+    //
+    // });
 
-    var books = [
-        {
-            title: "The Push",
-            author: {
-                firstName: "Tommy",
-                lastName: "Caldwell"
-            }
-        },
-        {
-            title: "Scar Tissue",
-            author: {
-                firstName: "Anthony",
-                lastName: "Kiedis"
-            }
-        },
-        {
-            title: "The Push",
-            author: {
-                firstName: "Tommy",
-                lastName: "Caldwell"
-            }
-        },
-        {
-            title: "Scar Tissue",
-            author: {
-                firstName: "Anthony",
-                lastName: "Kiedis"
-            }
-        },
-        {
-            title: "Scar Tissue",
-            author: {
-                firstName: "Anthony",
-                lastName: "Kiedis"
-            }
-        },
-    ];
-
-
-    console.log(books);
     /**
      * TODO:
      * Loop through the books array and output the following information about
@@ -174,5 +176,49 @@
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+
+
+    //     if (alert===true){
+    //         var title = prompt("Enter the title of the book");
+    //         var firstName = prompt("Enter the author's first name");
+    //         var lastName = prompt("Enter the author's last name");
+    //         var anotherBook = alert("Would you like to add another book?");
+    //         return ("Title: "+title+"Author: "+firstName+" "+lastName);
+    //     }
+    //
+    // console.log()
+
+    function addTitle(){
+        var addedTitle = prompt("Enter a title here");
+        return addedTitle
+    }
+
+    function addAuthor(){
+        var addedAuthor = prompt("Enter Author's name");
+        return addedAuthor
+    }
+
+    confirm("Would you like to add some books to our database?");
+
+    // if (confirm=true){
+    //     var bookList = [
+    //         {author: addAuthor(), title: addTitle()},
+    //         {author: addAuthor(), title: addTitle()},
+    //         {author: addAuthor(), title: addTitle()}
+    //     ]
+    // } else {
+    //     console.log("No book added")
+    // }
+
+    var bookList = [];
+
+    do {
+        var author = addAuthor();
+        var title = addTitle();
+        bookList.push({author: author, title: title})
+    } while (
+        confirm("Do you want to continue?"));
+
+    console.log(bookList);
 
 })();
