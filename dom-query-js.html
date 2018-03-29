@@ -7,6 +7,7 @@
 <body>
 
 <h1 id="main-header">Hello World!</h1>
+<button>Click me to change the title</button>
 <ul>
     <li data-dbid="1">Item 1</li>
     <li data-dbid="2">Item 2</li>
@@ -14,7 +15,9 @@
     <li data-dbid="4">Item 4</li>
     <li data-dbid="5">Item 5</li>
 </ul>
+<button>Click me to change the list item's colors</button>
 <h2 id="sub-header">Hello Again.</h2>
+<button>Click me to change this header's color</button>
 <p class="sub-paragraph">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -24,6 +27,7 @@
     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
+<button>Press me to change this paragraph to English</button>
 
 <script>
     (function() {
@@ -33,46 +37,76 @@
 
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
 
-        mainHeader.innerHTML = "Javascript is Cool";
+
 
         // TODO: Uncomment the next line and get the sub header element by id
         var subHeader = document.getElementById("sub-header");
 
         // TODO: Set the text color of subHeader to blue
 
-        subHeader.style.color = "blue";
+
 
         // TODO: Uncomment the next line and get all list items
         var listItems = document.getElementsByTagName("li");
 
         // TODO: Set text color on every other list item to grey
 
-        for (var i = 0; i <listItems.length; i++) {
-            if ([i] % 2 === 0) {
-                listItems[i].style.color = "grey";
-            }
-        }
+
 
         // TODO: Set text color of li with dbid = 1 to blue
 
-        for (var y = 0; y < listItems.length; y++) {
-            var dbId = listItems[0].getAttribute('data-dbid');
-                if (listItems[y].getAttribute('data-dbid') === dbId) {
-                    listItems[y].style.color = "blue";
-                }
 
-        }
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
         var subParagraphs = document.getElementsByClassName("sub-paragraph");
         //
         // for (var x=0; x<subParagraphs.length; x++) {
         //     if (subParagraphs[x] === subParagraphs[0]) {
-                subParagraphs[0].innerText = "Mission Accomplished!";
+
         //     }
         // }
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+
+        var button1 = document.getElementsByTagName("button")[0];
+
+        button1.addEventListener("click", function() {
+            mainHeader.innerHTML = "Javascript is Cool";
+        });
+
+        var button3 = document.getElementsByTagName("button")[2];
+
+        button3.addEventListener("click", function() {
+            subHeader.style.color = "blue";
+        });
+
+        var button2 = document.getElementsByTagName("button")[1];
+
+        button2.addEventListener("click", function() {
+            for (var i = 0; i <listItems.length; i++) {
+                if ([i] % 2 === 0) {
+                    listItems[i].style.color = "grey";
+                }
+            }
+
+            for (var y = 0; y < listItems.length; y++) {
+                var dbId = listItems[0].getAttribute('data-dbid');
+                if (listItems[y].getAttribute('data-dbid') === dbId) {
+                    listItems[y].style.color = "blue";
+                }
+
+            }
+        });
+
+        var button4 = document.getElementsByTagName("button")[3];
+
+        button4.addEventListener("click", function() {
+            subParagraphs[0].innerText = "Mission Accomplished!";
+        });
+
+
+
+
     })();
 </script>
 </body>
