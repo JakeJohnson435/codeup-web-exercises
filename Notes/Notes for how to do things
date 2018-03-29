@@ -1,0 +1,6 @@
+how to pull things out of an array to edit them:
+
+create a .forEach loop to get everything
+
+Orsinger's trick -
+var input=input[0];
