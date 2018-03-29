@@ -60,18 +60,17 @@
                 if (listItems[y].getAttribute('data-dbid') === dbId) {
                     listItems[y].style.color = "blue";
                 }
-            console.log(dbId);
 
         }
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
         var subParagraphs = document.getElementsByClassName("sub-paragraph");
-
-        for (var x=0; x<subParagraphs.length; x++) {
-            if (subParagraphs[x]=== subParagraphs[0]) {
-                subParagraphs[x].innerText = "Mission Accomplished!";
-            }
-        }
+        //
+        // for (var x=0; x<subParagraphs.length; x++) {
+        //     if (subParagraphs[x] === subParagraphs[0]) {
+                subParagraphs[0].innerText = "Mission Accomplished!";
+        //     }
+        // }
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
     })();
