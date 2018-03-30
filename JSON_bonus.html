@@ -890,6 +890,16 @@
         }
     }
 
+    var maleUsers = 0;
+    var femaleUsers = 0;
+
+    for (i = 0; i < arrayOfProfiles.length; i++) {
+        if (arrayOfProfiles[i].gender === "male") {
+            maleUsers++;
+        } else {
+            femaleUsers++;
+        }
+    }
 
 
     for (i = 0; i < arrayOfProfiles.length; i++) {
@@ -898,10 +908,22 @@
         console.log(balance);
     }
 
+    var totalAge = 0;
+
+    for (i =0; i <arrayOfProfiles.length; i++) {
+        var age = arrayOfProfiles[i].age;
+        totalAge+=age;
+    }
+
+    var averageAge = totalAge/arrayOfProfiles.length;
+
     var varReport = {
 
         totalUsers: arrayOfProfiles.length,
-        activeUsers: activeUsers
+        activeUsers: activeUsers,
+        averageAge: parseInt(averageAge)
+        // maleUsers: male,
+        // femaleUsers: female,
     };
 
 
