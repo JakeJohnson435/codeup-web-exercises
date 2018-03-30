@@ -879,12 +879,30 @@
         }
     ];
 
-    // var varReport = {
-    //
-    //     totalUsers: arrayOfProfiles.length,
-    //     activeUsers: arrayOfProfiles.isActive
-    // };
 
+
+
+    var activeUsers = 0;
+
+    for (i = 0; i < arrayOfProfiles.length; i++) {
+        if (arrayOfProfiles[i].isActive.valueOf(true)) {
+            activeUsers++;
+        }
+    }
+
+
+
+    for (i = 0; i < arrayOfProfiles.length; i++) {
+        var balance = arrayOfProfiles[i].balance;
+
+        console.log(balance);
+    }
+
+    var varReport = {
+
+        totalUsers: arrayOfProfiles.length,
+        activeUsers: activeUsers
+    };
 
 
     console.log(varReport);
