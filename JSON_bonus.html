@@ -893,7 +893,7 @@
     var maleUsers = 0;
     var femaleUsers = 0;
 
-    for (i = 0; i < arrayOfProfiles.length; i++) {
+    for (var i = 0; i < arrayOfProfiles.length; i++) {
         if (arrayOfProfiles[i].gender === "male") {
             maleUsers++;
         } else {
@@ -931,6 +931,12 @@
     }
 
 
+    var listOfCompanies = [];
+
+    for (var i = 0; i < arrayOfProfiles.length; i++) {
+        listOfCompanies.push(arrayOfProfiles[i].company.valueOf());
+    }
+
     var averageAge = totalAge/arrayOfProfiles.length;
 
     var varReport = {
@@ -942,7 +948,12 @@
         averageBalance: parseFloat(totalBalance/arrayOfProfiles.length).toFixed(2),
         maleUsers: maleUsers,
         femaleUsers: femaleUsers,
+        listOfCompanies: listOfCompanies,
     };
+
+
+
+
 
 
     console.log(varReport);
