@@ -25,9 +25,14 @@
 <script>
     "use strict";
 
-    $(".codeup").css('border', '1px solid red');
+    $("li").css('font-size', '20px');
+    $("h1, p, li").css("background-color", "yellow");
 
+    var h1contents = $("h1").text();
 
+    $(document).click(function() {
+        alert(h1contents)
+    });
 
 </script>
 
