@@ -13,9 +13,9 @@
     </div>
     <div class="div2">
         <ul>
-            <li class="list-item">Item 1</li>
-            <li class="list-item even">Item 2</li>
-            <li class="list-item">Item 3</li>
+            <li class="codeup">Item 1</li>
+            <li class="even" id="codeup">Item 2</li>
+            <li class="codeup">Item 3</li>
             <li class="list-item even">Item 4</li>
         </ul>
     </div>
@@ -24,10 +24,10 @@
 <script type="text/javascript" src="js/jquery-2.2.4.js"></script>
 <script>
     "use strict";
-    var contents = $('p').html();
-    $(document).click(function() {
-        alert(contents)
-    });
+
+    $(".codeup").css('border', '1px solid red');
+
+
 
 </script>
 
