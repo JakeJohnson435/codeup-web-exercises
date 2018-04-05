@@ -6,15 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<h1>Hi Everybody!</h1>
+    <h1 id="welcome">Hi Everybody!</h1>
+    <div id="div1">
+        <p id="main-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Blanditiis enim ex, iure neque possimus qui suscipit tenetur. Assumenda, neque, quod!</p>
+    </div>
+    <div class="div2">
+        <ul>
+            <li class="list-item">Item 1</li>
+            <li class="list-item even">Item 2</li>
+            <li class="list-item">Item 3</li>
+            <li class="list-item even">Item 4</li>
+        </ul>
+    </div>
 
 
 <script type="text/javascript" src="js/jquery-2.2.4.js"></script>
 <script>
     "use strict";
-    $(document).ready(function() {
-        alert( 'The DOM has finished loading!' );
+    var contents = $('p').html();
+    $(document).click(function() {
+        alert(contents)
     });
+
 </script>
 
 </body>
