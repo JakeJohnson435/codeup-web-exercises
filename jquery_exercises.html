@@ -25,13 +25,20 @@
 <script>
     "use strict";
 
-    $("li").css('font-size', '20px');
-    $("h1, p, li").css("background-color", "yellow");
+    $("h1").click(function() {
+        $("h1").css("background-color", "blue")
+    });
 
-    var h1contents = $("h1").text();
+    $("p").dblclick(function() {
+        $("p").css("font-size", "18px")
+    });
 
-    $(document).click(function() {
-        alert(h1contents)
+    $("li").mouseenter(function() {
+        $("li").css("color", "red")
+    });
+
+    $("li").mouseleave(function() {
+        $("li").css("color", "black")
     });
 
 </script>
