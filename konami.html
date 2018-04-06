@@ -21,14 +21,14 @@
     function konamiCode(input) {
         var codeEntered = "";
         var key = "3838404037393739666513";
-        $(document).keydown(function (i) {
-            codeEntered += ("" + i.keyCode);
+        $(document).keydown(function (event) {
+            codeEntered += ("" + event.keyCode);
             if (codeEntered === key) {
                 return input();
             }
             if (!key.indexOf(codeEntered))
                 return;
-            codeEntered = ("" + i.keyCode);
+            codeEntered = ("" + event.keyCode);
         });
     }
 
@@ -41,14 +41,14 @@
     function reverseCode(input) {
         var codeEntered = "";
         var key = "6566393739374040383813";
-        $(document).keydown(function (i) {
-            codeEntered += ("" + i.keyCode);
+        $(document).keydown(function (event) {
+            codeEntered += ("" + event.keyCode);
             if (codeEntered === key) {
                 return input();
             }
             if (!key.indexOf(codeEntered))
                 return;
-            codeEntered = ("" + i.keyCode);
+            codeEntered = ("" + event.keyCode);
         });
     }
 
