@@ -8,6 +8,10 @@
         .invisible {
             display: none;
         }
+
+        .high {
+            background-color: yellow;
+        }
     </style>
 </head>
 <body>
@@ -46,7 +50,11 @@
     $("button").click(function(event) {
         event.preventDefault();
         $("dd").toggleClass('invisible')
-    })
+    });
+
+    $("dt").click(function(event) {
+        $(this).toggleClass('high')
+    });
 
 </script>
 </body>
