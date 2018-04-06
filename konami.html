@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Konami Code</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h1>Konami Code</h1>
+
+
+
+
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+
+    "use strict";
+
+    function konamiCode(input) {
+        var codeEntered = "";
+        var key = "3838404037393739666513";
+        $(document).keydown(function (i) {
+            codeEntered += ("" + i.keyCode);
+            if (codeEntered === key) {
+                return input();
+            }
+            if (!key.indexOf(codeEntered))
+                return;
+            codeEntered = ("" + i.keyCode);
+        });
+    }
+
+    konamiCode(function() {
+        alert("You have added 30 lives!");
+        $("body").html('<button><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Collect Your Prize</a></button>')
+    });
+
+    function reverseCode(input) {
+        var codeEntered = "";
+        var key = "6566393739374040383813";
+        $(document).keydown(function (i) {
+            codeEntered += ("" + i.keyCode);
+            if (codeEntered === key) {
+                return input();
+            }
+            if (!key.indexOf(codeEntered))
+                return;
+            codeEntered = ("" + i.keyCode);
+        });
+    }
+
+    reverseCode(function() {
+        alert("You just lost lives, why would you do that?")
+    });
+
+
+
+
+
+</script>
+</body>
+</html>
