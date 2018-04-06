@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>National Park FAQ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .invisible {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<h1>National Park FAQs</h1>
+
+<dl>
+    <dt>Which Park is the biggest?</dt>
+    <dd class="invisible">Wrangell-St. Elias, AK</dd>
+    <dt>Which Park is the smallest?</dt>
+    <dd class="invisible">Thaddeus Kosciuszko National Memorial, PA</dd>
+    <dt>How many employees are in the Park Service?</dt>
+    <dd class="invisible">More than 20,000 people.</dd>
+    <dt>How old is the Park system?</dt>
+    <dd class="invisible">It was an act signed into law in 1916 by President Wilson</dd>
+    <dt>How many Parks are there?</dt>
+    <dd class="invisible">There are 417 areas included in the Park System</dd>
+    <dt>Can I bring my pet to the Park?</dt>
+    <dd class="invisible">Many Parks do allow pets.</dd>
+    <dt>Can I camp in the Park?</dt>
+    <dd class="invisible">Many Parks have designated camping/lodging areas.</dd>
+    <dt>Which state has the most Parks?</dt>
+    <dd class="invisible">California</dd>
+    <dt>Which state has the least?</dt>
+    <dd class="invisible">Some states have no true National Parks, such as Delaware</dd>
+    <dt>Are the Parks worth the trip?</dt>
+    <dd class="invisible">YES!</dd>
+</dl>
+
+<button>Show all Answers</button>
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+
+
+    $("button").click(function(event) {
+        event.preventDefault();
+        $("dd").toggleClass('invisible')
+    })
+
+</script>
+</body>
+</html>
