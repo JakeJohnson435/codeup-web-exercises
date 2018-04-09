@@ -12,6 +12,39 @@
         .high {
             background-color: yellow;
         }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .first-li {
+            color: blue;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .frame {
+
+            width: 31%;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        .swap {
+            width: 31%;
+            display: inline-block;
+            text-align: center;
+
+        }
+
+        .frame img {
+            width: 100%;
+            height: 300px;
+            border: solid 5px black;
+        }
+
     </style>
 </head>
 <body>
@@ -40,14 +73,54 @@
     <dd class="invisible">YES!</dd>
 </dl>
 
-<button>Show all Answers</button>
+<button class="hide">Show all Answers</button>
+<h3 class="park-facts">Arches Natl. Park</h3>
+    <ul>
+        <li>There are over 2,000 recorded arches in the Park.</li>
+        <li>When a new arch in the park is discovered or formed the person to find it gets to name it.</li>
+        <li>The whole of the Park used to be under an inland sea which formed and re-formed 29 times.</li>
+        <li>One of the most iconic features in the Park is actually the Balanced Rock, and not an arch.</li>
+    </ul>
+<h3 class="park-facts">Yosemite Natl. Park</h3>
+    <ul>
+        <li>The campaign to get Yosemite to be a Natl Park was headed by a Scottish Immigrant.</li>
+        <li>The iconic Park Ranger hat known as the Montana Peak style was created by the Buffalo Soldiers who patrolled the park.</li>
+        <li>One of the biggest attractions of the Park used to be a "Waterfall of fire".</li>
+        <li>Yosemite is home to some of the most well known Big Wall climbs in the world. Including the Dawn Wall, once considered impossible to climb.</li>
+    </ul>
+<h3 class="park-facts">Zion Natl. Park</h3>
+    <ul>
+        <li>Despite looking peaceful, Angel's Landing is listed as one of the most dangerous trails in the world.</li>
+        <li>Alongside Arches Natl. Park, Zion has one of the largest freestanding arches in the world.</li>
+        <li>Zion used to be in the middle of a desert and had 2,000 foot thick sand dunes covering it.</li>
+        <li>There is an underground spring in the park which takes 1,000 years for the water to reach the surface through the sandstone.</li>
+    </ul>
 
+<button class="highlight-last">Highlight last item in the list</button>
+
+<br>
+<div class="container">
+    <div class="frame frame1">
+        <image src="img/arches.jpg"></image>
+    </div>
+
+    <div class="frame frame2">
+        <image src="img/yosemite.jpg"></image>
+    </div>
+
+    <div class="frame frame3">
+        <image src="img/zion.jpg"></image>
+    </div>
+
+    <button class="left swap">Swap</button>
+    <button class="center swap">Swap</button>
+    <button class="right swap">Swap</button>
+</div>
 
 <script type="text/javascript" src="js/jquery.js"></script>
 <script>
 
-
-    $("button").click(function(event) {
+    $(".hide").click(function(event) {
         event.preventDefault();
         $("dd").toggleClass('invisible')
     });
@@ -55,6 +128,43 @@
     $("dt").click(function(event) {
         $(this).toggleClass('high')
     });
+
+    $(".highlight-last").click(function(e) {
+        $("ul").each(function () {
+            $(this).children().last().toggleClass('high')
+        })
+    });
+
+    $("h3").click(function(e) {
+        $(this).next().children().toggleClass('bold')
+    });
+
+    $("li").click(function (e) {
+        $(this).parent().children().first().toggleClass("first-li")
+    });
+
+    var div1=$("frame1");
+    var div2=$("frame2");
+    var div3=$("frame3");
+
+    $(".left").click(function() {
+        $(".frame").each(function() {
+            $(this).insertAfter($(this).next('.frame2'));
+        })
+    });
+
+    $(".right").click(function() {
+        $(".frame").each(function() {
+            $(this).insertBefore($(this).prev('.frame2'));
+        })
+    });
+
+    // $(".center").click(function() {
+    //     $(".frame").each(function() {
+    //         if (div1
+    //         $(this).insertBefore($(this).prev('.frame2'));
+    //     })
+    // });
 
 </script>
 </body>
