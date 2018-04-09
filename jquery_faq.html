@@ -45,78 +45,115 @@
             border: solid 5px black;
         }
 
+        .newsletter, .popup{
+            margin: auto;
+            display: inline-block;
+            border: 3px solid black;
+            position: fixed;
+            background-color: grey;
+            height: 500px;
+        }
+
+        .newsletter>h1, .popup>h2 {
+            float: left;
+            text-align: center;
+        }
+
+        .exit, .exit2 {
+            float: right;
+        }
+
+        li {
+            display: none;
+        }
+
+        .body {
+            width: 100%;
+        }
+
+
     </style>
 </head>
 <body>
-<h1>National Park FAQs</h1>
-
-<dl>
-    <dt>Which Park is the biggest?</dt>
-    <dd class="invisible">Wrangell-St. Elias, AK</dd>
-    <dt>Which Park is the smallest?</dt>
-    <dd class="invisible">Thaddeus Kosciuszko National Memorial, PA</dd>
-    <dt>How many employees are in the Park Service?</dt>
-    <dd class="invisible">More than 20,000 people.</dd>
-    <dt>How old is the Park system?</dt>
-    <dd class="invisible">It was an act signed into law in 1916 by President Wilson</dd>
-    <dt>How many Parks are there?</dt>
-    <dd class="invisible">There are 417 areas included in the Park System</dd>
-    <dt>Can I bring my pet to the Park?</dt>
-    <dd class="invisible">Many Parks do allow pets.</dd>
-    <dt>Can I camp in the Park?</dt>
-    <dd class="invisible">Many Parks have designated camping/lodging areas.</dd>
-    <dt>Which state has the most Parks?</dt>
-    <dd class="invisible">California</dd>
-    <dt>Which state has the least?</dt>
-    <dd class="invisible">Some states have no true National Parks, such as Delaware</dd>
-    <dt>Are the Parks worth the trip?</dt>
-    <dd class="invisible">YES!</dd>
-</dl>
-
-<button class="hide">Show all Answers</button>
-<h3 class="park-facts">Arches Natl. Park</h3>
-    <ul>
-        <li>There are over 2,000 recorded arches in the Park.</li>
-        <li>When a new arch in the park is discovered or formed the person to find it gets to name it.</li>
-        <li>The whole of the Park used to be under an inland sea which formed and re-formed 29 times.</li>
-        <li>One of the most iconic features in the Park is actually the Balanced Rock, and not an arch.</li>
-    </ul>
-<h3 class="park-facts">Yosemite Natl. Park</h3>
-    <ul>
-        <li>The campaign to get Yosemite to be a Natl Park was headed by a Scottish Immigrant.</li>
-        <li>The iconic Park Ranger hat known as the Montana Peak style was created by the Buffalo Soldiers who patrolled the park.</li>
-        <li>One of the biggest attractions of the Park used to be a "Waterfall of fire".</li>
-        <li>Yosemite is home to some of the most well known Big Wall climbs in the world. Including the Dawn Wall, once considered impossible to climb.</li>
-    </ul>
-<h3 class="park-facts">Zion Natl. Park</h3>
-    <ul>
-        <li>Despite looking peaceful, Angel's Landing is listed as one of the most dangerous trails in the world.</li>
-        <li>Alongside Arches Natl. Park, Zion has one of the largest freestanding arches in the world.</li>
-        <li>Zion used to be in the middle of a desert and had 2,000 foot thick sand dunes covering it.</li>
-        <li>There is an underground spring in the park which takes 1,000 years for the water to reach the surface through the sandstone.</li>
-    </ul>
-
-<button class="highlight-last">Highlight last item in the list</button>
-
-<br>
-<div class="container">
-    <div class="frame frame1">
-        <image src="img/arches.jpg"></image>
+<div class="body">
+    <div class="newsletter">
+        <h1>Would you like to sign up for our newsletter?</h1>
+        <span class="exit">x</span>
     </div>
 
-    <div class="frame frame2">
-        <image src="img/yosemite.jpg"></image>
-    </div>
+    <h1>National Park FAQs</h1>
 
-    <div class="frame frame3">
-        <image src="img/zion.jpg"></image>
-    </div>
+    <dl>
+        <dt>Which Park is the biggest?</dt>
+        <dd class="invisible">Wrangell-St. Elias, AK</dd>
+        <dt>Which Park is the smallest?</dt>
+        <dd class="invisible">Thaddeus Kosciuszko National Memorial, PA</dd>
+        <dt>How many employees are in the Park Service?</dt>
+        <dd class="invisible">More than 20,000 people.</dd>
+        <dt>How old is the Park system?</dt>
+        <dd class="invisible">It was an act signed into law in 1916 by President Wilson</dd>
+        <dt>How many Parks are there?</dt>
+        <dd class="invisible">There are 417 areas included in the Park System</dd>
+        <dt>Can I bring my pet to the Park?</dt>
+        <dd class="invisible">Many Parks do allow pets.</dd>
+        <dt>Can I camp in the Park?</dt>
+        <dd class="invisible">Many Parks have designated camping/lodging areas.</dd>
+        <dt>Which state has the most Parks?</dt>
+        <dd class="invisible">California</dd>
+        <dt>Which state has the least?</dt>
+        <dd class="invisible">Some states have no true National Parks, such as Delaware</dd>
+        <dt>Are the Parks worth the trip?</dt>
+        <dd class="invisible">YES!</dd>
+    </dl>
 
-    <button class="left swap">Swap</button>
-    <button class="center swap">Swap</button>
-    <button class="right swap">Swap</button>
+    <button class="hide" >Show all Answers</button>
+    <div class="popup" style="display: none">
+        <h2 class="fade">Remember to register for the site!</h2>
+        <span class="exit2">x</span>
+    </div>
+    <h3 class="park-facts">Arches Natl. Park</h3>
+        <ul>
+            <li>There are over 2,000 recorded arches in the Park.</li>
+            <li>When a new arch in the park is discovered or formed the person to find it gets to name it.</li>
+            <li>The whole of the Park used to be under an inland sea which formed and re-formed 29 times.</li>
+            <li>One of the most iconic features in the Park is actually the Balanced Rock, and not an arch.</li>
+        </ul>
+    <h3 class="park-facts">Yosemite Natl. Park</h3>
+        <ul>
+            <li>The campaign to get Yosemite to be a Natl Park was headed by a Scottish Immigrant.</li>
+            <li>The iconic Park Ranger hat known as the Montana Peak style was created by the Buffalo Soldiers who patrolled the park.</li>
+            <li>One of the biggest attractions of the Park used to be a "Waterfall of fire".</li>
+            <li>Yosemite is home to some of the most well known Big Wall climbs in the world. Including the Dawn Wall, once considered impossible to climb.</li>
+        </ul>
+    <h3 class="park-facts">Zion Natl. Park</h3>
+        <ul>
+            <li>Despite looking peaceful, Angel's Landing is listed as one of the most dangerous trails in the world.</li>
+            <li>Alongside Arches Natl. Park, Zion has one of the largest freestanding arches in the world.</li>
+            <li>Zion used to be in the middle of a desert and had 2,000 foot thick sand dunes covering it.</li>
+            <li>There is an underground spring in the park which takes 1,000 years for the water to reach the surface through the sandstone.</li>
+        </ul>
+
+    <button class="highlight-last">Highlight last item in the list</button>
+
+    <br>
+    <div class="container">
+        <div class="frame frame1">
+            <image src="img/arches.jpg"></image>
+        </div>
+
+        <div class="frame frame2">
+            <image src="img/yosemite.jpg"></image>
+        </div>
+
+        <div class="frame frame3">
+            <image src="img/zion.jpg"></image>
+        </div>
+
+        <button class="left swap">Swap</button>
+        <button class="center swap">Swap</button>
+        <button class="right swap">Swap</button>
+    </div>
 </div>
-
 <script type="text/javascript" src="js/jquery.js"></script>
 <script>
 
@@ -136,12 +173,23 @@
     });
 
     $("h3").click(function(e) {
-        $(this).next().children().toggleClass('bold')
+        $(this).next().children().slideToggle();
+        // $(this).next().children().toggleClass('bold')
     });
 
     $("li").click(function (e) {
         $(this).parent().children().first().toggleClass("first-li")
     });
+
+    $('.exit').click(function() {
+        $(".newsletter").hide();
+    });
+
+    $('.exit2').click(function() {
+        $(".popup").hide();
+    });
+
+    $('.popup').delay(8000).fadeIn(2000);
 
     var div1=$("frame1");
     var div2=$("frame2");
