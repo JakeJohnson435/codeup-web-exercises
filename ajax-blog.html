@@ -57,6 +57,11 @@
 
             });
 
+            request.fail(function(request, status, error) {
+                console.log(status);
+                console.log(error);
+            });
+
             request.done(function (response) {
                 response.forEach(function (post) {
                     $('#posts').append("<div><h3>" + post.title +
@@ -66,6 +71,7 @@
             });
 
         });
+
 
 
 

@@ -42,6 +42,11 @@
 
     });
 
+    request.fail(function(request, status, error) {
+        console.log(status);
+        console.log(error);
+    });
+
     request.done(function (response) {
         response.forEach(function (item) {
             $('#insertProducts').append("<tr><td><a class='" + item.title + "'>" + item.title + "</a></td><td>" +
