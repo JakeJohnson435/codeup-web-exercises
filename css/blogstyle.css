@@ -1,0 +1,12 @@
+.jumbotron {
+    background-image: url("../IMG/Zion_Panorama.jpg");
+    background-size: cover;
+}
+
+body {
+    background-color: #C6BAA9;
+}
+
+p {
+    color: #907D61;
+}

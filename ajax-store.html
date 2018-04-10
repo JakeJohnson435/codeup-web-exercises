@@ -2,16 +2,8 @@
 <html>
 <head>
     <title>Online Store</title>
-    <style>
-        #products {
-            text-align: center;
-            border: 1px solid black;
-        }
-
-        td, tr {
-            border: 1px solid black;
-        }
-    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/storestyle.css">
 </head>
 <body>
 
@@ -52,7 +44,6 @@
                 item.categories + "</td></tr>");
         })
     });
-
 
     $(".refresh").click(function () {
         $("#insertProducts").empty();

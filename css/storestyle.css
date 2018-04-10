@@ -1,0 +1,8 @@
+#products {
+    text-align: center;
+    border: 1px solid black;
+}
+
+td, tr {
+    border: 1px solid black;
+}
