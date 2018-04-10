@@ -6,8 +6,14 @@
     <link rel="stylesheet" href="css/storestyle.css">
 </head>
 <body>
-
-<h1>My Tool Store</h1>
+<header>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Jake's Tool Emporium</h1>
+            <p class="lead">Turn Honey-do, into Honey-done.</p>
+        </div>
+    </div>
+</header>
 
 <table id="products">
     <thead>
@@ -38,9 +44,9 @@
 
     request.done(function (response) {
         response.forEach(function (item) {
-            $('#insertProducts').append("<tr><td>" + item.title + "</td><td>" +
+            $('#insertProducts').append("<tr><td><a class='" + item.title + "'>" + item.title + "</a></td><td>" +
                 item.quantity + "</td><td>" +
-                item.price + "</td><td>" +
+                "$" + item.price + "</td><td>" +
                 item.categories + "</td></tr>");
         })
     });
@@ -57,19 +63,17 @@
 
         request.done(function (response) {
             response.forEach(function (item) {
-                $('#insertProducts').append("<tr><td>" + item.title + "</td><td>" +
+                $('#insertProducts').append("<tr><td><a class='" + item.title + "'>" + item.title + "</a></td><td>" +
                     item.quantity + "</td><td>" +
-                    item.price + "</td><td>" +
+                    "$" + item.price + "</td><td>" +
                     item.categories + "</td></tr>");
             })
         });
 
     });
 
-    // TODO: Take the data from inventory.json and append it to the products table
-    //       HINT: Your data should come back as a JSON object; use console.log() to inspect
-    //             its contents and fields
-    //       HINT: You will want to target #insertProducts for your new HTML elements
+
+
 })();
 </script>
 

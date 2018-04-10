@@ -1,3 +1,14 @@
+
+
+body {
+    text-align: center;
+    background-color: #696969;
+}
+
+table {
+    margin: 0 auto;
+}
+
 #products {
     text-align: center;
     border: 1px solid black;
@@ -6,3 +17,36 @@
 td, tr {
     border: 1px solid black;
 }
+
+.jumbotron {
+    background-image: url("../IMG/tools.jpg");
+    background-size: cover;
+}
+
+.Hammer:hover {
+    content: url("../IMG/hammer.jpeg");
+    display:block;
+}
+
+.Drill:hover {
+    content: url("../IMG/drill.jpeg");
+}
+
+.Mower:hover {
+    content: url("../IMG/mower.jpeg");
+}
+
+.Screwdrivers:hover {
+    content: url("../IMG/screwdrivers.jpeg");
+}
+
+.Nails:hover {
+    content: url("../IMG/nails.jpeg");
+}
+
+td {
+    padding: 25px;
+}
+
+
+
