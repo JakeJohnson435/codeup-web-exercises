@@ -72,6 +72,9 @@
             width: 100%;
         }
 
+        #login {
+            clear: both;
+        }
 
     </style>
 </head>
@@ -112,6 +115,19 @@
     <div class="popup" style="display: none">
         <h2 class="fade">Remember to register for the site!</h2>
         <span class="exit2">x</span>
+        <form action="" id="login">
+            <label for="email">Email</label>
+            <input id="email" name="email" placeholder="Enter Email" type="text">
+
+            <br>
+
+            <label for="password">Password</label>
+            <input id="password" name="password" placeholder="Password" type="password">
+
+            <br>
+
+            <button>Submit</button>
+        </form>
     </div>
     <h3 class="park-facts">Arches Natl. Park</h3>
         <ul>
@@ -209,12 +225,16 @@
         })
     });
 
-    // $(".center").click(function() {
-    //     $(".frame").each(function() {
-    //         if (div1
-    //         $(this).insertBefore($(this).prev('.frame2'));
-    //     })
-    // });
+    $(".center").click(function() {
+        var count = Math.floor(Math.random() * 25);
+        $(".frame").each(function() {
+                if (count % 2 === 0) {
+                $(this).insertBefore($(this).prev('.frame1'));
+            } else {
+                $(this).insertAfter($(this).next('.frame3'));
+           }
+        })
+    });
 
 </script>
 </body>
