@@ -10,3 +10,24 @@ body {
 p {
     color: #907D61;
 }
+
+div>h1, h3{
+    font-family: 'Lobster', cursive;
+}
+
+h3 {
+    display: inline-block;
+    float: left;
+}
+
+.date {
+    display: inline-block;
+    float: right;
+}
+
+.post {
+    clear: both;
+    text-align: center;
+    padding-left: 2em;
+    padding-right: 2em;
+}

@@ -23,5 +23,12 @@
         "Nonsense"
     ],
     "date": "April 10, 2019"
+    }, {
+        "title": "And For the Fourth",
+        "content": "Another test just to make sure everything is still working now that I added other tags and styling to the page",
+        "categories": [
+            "Nonsense"
+        ],
+        "date": "Sometime in the future"
     }
 ]

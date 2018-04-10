@@ -5,6 +5,7 @@
     <title>Ajax Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link rel="stylesheet" href="css/blogstyle.css">
 </head>
 <body>
@@ -40,9 +41,9 @@
 
         request.done(function (response) {
             response.forEach(function (post) {
-                $('#posts').append("<h3>" + post.title +
-                    "</h3><p>" + post.content +
-                    "</p><br><p>" + post.date + "<br>" + "tags: " + post.categories + "</p>");
+                $('#posts').append("<div><h3>" + post.title +
+                    "</h3><p class='date'>" + post.date + "</p><p class='post'>" + post.content +
+                    "</p><br><p>" + "<br>" + "tags: " + post.categories + "</p></div><hr>");
             })
         });
 
@@ -58,13 +59,15 @@
 
             request.done(function (response) {
                 response.forEach(function (post) {
-                    $('#posts').append("<h3>" + post.title +
-                        "</h3><p>" + post.content +
-                        "</p><br><p>" + post.date + "<br>" + "tags: " + post.categories + "</p>");
+                    $('#posts').append("<div><h3>" + post.title +
+                        "</h3><p class='date'>" + post.date + "</p><p class='post'>" + post.content +
+                        "</p><br><p>" + "<br>" + "tags: " + post.categories + "</p></div><hr>");
                 })
             });
 
         });
+
+
 
     })();
 </script>
