@@ -46,3 +46,9 @@ p {
     margin: 0 auto;
     width: 5em;
 }
+
+#map-canvas {
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+}
