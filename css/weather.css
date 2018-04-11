@@ -9,6 +9,14 @@ body {
     text-align: center;
 }
 
+p {
+    margin-bottom: 0;
+}
+
+.current {
+    background-color: white;
+}
+
 .temp {
     font-weight: bold;
 }
@@ -27,6 +35,7 @@ body {
     display: inline-block;
     text-align: center;
     border: 1px solid black;
+    background-color: white;
 }
 
 .forecast2 {
