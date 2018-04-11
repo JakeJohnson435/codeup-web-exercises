@@ -1,0 +1,26 @@
+#current{
+    border: 1px solid black;
+    width: 25%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.temp {
+    font-weight: bold;
+}
+
+.wind, .weather, .pressure, .humidity {
+    font-weight: bold;
+}
+
+#forecast {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.forecast1, .forecast2, .forecast3 {
+    width: 33%;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid black;
+}
